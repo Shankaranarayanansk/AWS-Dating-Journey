@@ -1,3 +1,8 @@
+
+# ☁️ VPC Theory Concepts
+
+---
+
 ## 📌 CIDR (Classless Inter-Domain Routing)
 
 CIDR notation defines the IP address range and how many IPs are included:
@@ -54,26 +59,15 @@ Example:
    │
    ▼
 🗄️ Database (EC2/RDS/DynamoDB)
+```
 
-🧑‍💻 Client (Browser)
-   │
-   ▼
-🌐 DNS (Route 53)
-   │
-   ▼
-🧰 Load Balancer (ELB)
-   │
-   ▼
-⚙️ Application Tier (EC2 - Node.js, Spring Boot, etc.)
-   │
-   ▼
-🖥️ Web Server Tier (EC2 - Apache/Nginx for static + dynamic content)
-   │
-   ▼
-🗄️ Database Tier (RDS / DynamoDB / EC2-DB Server)
+- Static files can be served from: 🗂️ **S3 Bucket**
+
+---
 
 ### 🧩 3-Tier Architecture
 
+```text
 🧑‍💻 Client (Browser)
    │
    ▼
@@ -90,3 +84,10 @@ Example:
    │
    ▼
 🗄️ Database Tier (RDS / DynamoDB / EC2-DB Server)
+```
+
+🎯 S3 can be connected at the **Web Server Tier** to store and serve static content efficiently.
+
+---
+
+✅ Use **VPC** to structure networking securely and scalably in AWS.
